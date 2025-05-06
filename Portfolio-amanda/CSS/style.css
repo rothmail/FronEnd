@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+/*Correção de tamanhos (títulos)*/
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+a {
+    font-size: 15px;
+}
+
+.link {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.parisienne-regular {
+    font-family: "Parisienne", cursive;
+    font-size: 30px;
+}
+
+#container-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.sidebar {
+    display: block;
+    width: 250px;
+    background-color: #cfa6f2;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    color: #fce4ff;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.me {
+    background: linear-gradient(120deg, #e6ccff, #f9f0ff);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1s ease;
+}
+
+.me h1 {
+    margin-bottom: 10px;
+}
+
+.me h1 i {
+    color: #a64bf4;
+}
+
+
+.projects {
+    margin-top: 30px;
+}
+
+.projects h2 {
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background: linear-gradient(120deg, #e6ccff, #f9f0ff);
+    width: 32.7%;
+}
+
+.image-project {
+    width: 100%;
+}
+
+a {
+    color: #8d39cb;
+}
+
+a:hover {
+    color: #320056;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .contact {
+        text-align: center;
+    }
+}
+
+.projects h3 {
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-card {
+    background-color: #f2e6fc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 350px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-project {
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+#image-me {
+    width: 30%;
+    margin-top: 20px;
+    border-radius: 100px 50px;
+    display: flex;
+    align-self: center;
+}
+
+.p-about {
+    font-size: 16px;
+    line-height: 1.3;
+    color: #333;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .project-grid {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+.content-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.content-post {
+    background-color: #fdf6ff;
+    padding: 15px;
+    border-left: 4px solid #c49edb;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.content-post h2 {
+    margin-bottom: 5px;
+    color: #a84eb9;
+}
+
+.post {
+    background: linear-gradient(120deg, #e6ccff, #f9f0ff);
+    border-radius: 15px;
+    padding: 15px;
+    width: auto;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#inputlupa {
+    width: 50%;
+}
+
+#btn-buscar {
+    background-color: #f2e6fc;
+    color: #320056;
+}

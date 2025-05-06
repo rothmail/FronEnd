@@ -1,0 +1,8 @@
+p {
+    border-color: brown;
+    border-width: 3px;
+    border-radius: 15px;
+    border-style: dotted;
+    padding: 10px;
+    margin: 15px 30px;
+}

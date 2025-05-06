@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VizLab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./carousel.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/mobile.css">
+
+
+</head>
+
+<body>
+    <header class="test3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+
+                <!-- LOGO + MENU JUNTOS À ESQUERDA -->
+                <div class="d-flex align-items-center gap-3">
+                    <img src="https://th.bing.com/th/id/R.446e0c48373b36c9c0df013b21566132?rik=JvG84mbwCBonGQ&pid=ImgRaw&r=0"
+                        alt="Logo VizLab" class="logo">
+
+                    <ul class="nav">
+                        <li><a href="#mosis" class="menu nav-link px-2 text-white">Mossis XP</a></li>
+                        <li><a href="#curiosidade" class="menu nav-link px-2 text-white">Curiosidades</a></li>
+                        <li><a href="#viz" class="menu nav-link px-2 text-white">VizLab</a></li>
+                        <li><a href="#Criadores" class="menu nav-link px-2 text-white">Criadores</a></li>
+                    </ul>
+                </div>
+
+                <!-- FORMULÁRIO DE BUSCA À DIREITA -->
+
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active slide1">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>VizLab</h1>
+                            <p>Realização de uma Visita técnica à empresa VizLab.</p>
+                            <p><a class="btn btn-lg btn-primary" href="https://vizlab.unisinos.br/">Saiba Mais</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item slide2">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Exposição</h1>
+                            <p>Exposição de diferentes tipos de rochas, destacando suas características físicas e
+                                geológicas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item slide3">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Fóssil</h1>
+                            <p>Observação de fóssil - peixe preservado em rocha.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item slide4">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Fraturas Rochosas</h1>
+                            <p>Análise de fraturas rochosas, com representação por meio de desenho e modelagem manual.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item slide5">
+                    <div class="container">
+                        <div class="carousel-caption text-center">
+                            <h1>Drone</h1>
+                            <p>Mostra de drone utilizado na captação de imagens geológicas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--CUIDAR FECHAMENTO DE DIVS-->
+
+            <!--SETAS DO CARROSEL-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+            <div>
+                <!--MUDANÇAS DE CARROSSEL-->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <hr id="mosis" class="featurette-divider">
+
+    <div class="row featurette">
+        <div id="sobre" class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">O Mosis XP<span class="text-body-secondary"> é responsável
+                    pela
+                    visualização,</span></h2>
+            <p class="lead"> análise e interpretação de dados armazenados no servidor Mosis HUB, funcionando tanto em
+                computadores (desktop) quanto em realidade virtual (VR) por meio do Mosis iXP. <br>
+                Trata-se de um software para desktop que possibilita a visualização e interpretação de modelos digitais
+                de afloramentos (DOMs). O Mosis XP oferece diversas ferramentas, como planos ajustáveis, linhas de
+                referência, agrupamento de dados e estereogramas interativos, permitindo uma análise detalhada de
+                estruturas geológicas.
+            </p>
+
+            <div class="col-md-5 order-md-1">
+                <img id="foto1" src="https://i.postimg.cc/XXSZ8HYh/Whats-App-Image-2025-04-29-at-14-19-33.jpg"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
+                    fill="var(--bs-secondary-color)" dy=".3em">500x500</text></img>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="row featurette">
+        <div id="sobre" class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Tanto no Mosis XP<span class="text-body-secondary"> quanto no
+                    iXP,</span></h2>
+            <p class="lead"> é possível realizar a interpretação detalhada de fraturas em ambientes digitais e
+                imersivos, o que é fundamental para o estudo da permeabilidade e porosidade de reservatórios geológicos.
+                <br>
+                O Mosis XP também conta com ferramentas de medição, que permitem medir distâncias lineares entre pontos
+                nos modelos digitais de afloramentos, proporcionando maior precisão nas análises. Além disso, o sistema
+                possibilita o carregamento de projetos e texturas e oferece ferramentas de seleção para a análise
+                específica de áreas de interesse.
+            </p>
+
+            <div class="col-md-5 order-md-1">
+                <img id="foto2" src="https://i.postimg.cc/P5bkf3T0/mosis2.png"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
+                    fill="var(--bs-secondary-color)" dy=".3em">500x500</text></img>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <center>
+            <h1 id="curiosidade">Curiosidades</h1>
+            <div id="curi">
+
+                <div class="pj">
+                    <!--Pedra renderizada-->
+                    <img src="https://i.postimg.cc/8zD88RJV/Whats-App-Image-2025-04-29-at-14-31-43.jpg"
+                        alt="foto pedra">
+                    <h2>Rocha Renderizada</h2>
+                    <p>No laboratório da VizLab, as rochas são cuidadosamente renderizadas utilizando computadores de
+                        alta
+                        performance, capazes de lidar com modelos extremamente complexos. Cada uma dessas rochas é
+                        composta,
+                        em
+                        média, por cerca de 3 milhões de polígonos, o que garante um nível de detalhamento visual
+                        impressionante.
+                    <p>
+                </div>
+
+                <!--Chroma Key-->
+                <div class="pj">
+                    <img src="https://i.postimg.cc/FHxMhY3k/Whats-App-Image-2025-04-29-at-14-31-44.jpg" alt="key">
+                    <h2>Chroma Key</h2>
+                    <p>O chroma key é uma técnica usada para substituir o fundo de uma imagem ou vídeo por outro
+                        cenário.
+                        Ele
+                        funciona com uma cor sólida, geralmente verde, é fácil de
+                        remover digitalmente. Muito usada no cinema, na TV e em vídeos online, essa técnica permite
+                        criar
+                        efeitos visuais e simular ambientes diferentes sem sair do estúdio.</p>
+
+                </div>
+
+                <div class="pj">
+                    <img src="https://i.postimg.cc/Gpw4nSPm/Whats-App-Image-2025-04-29-at-14-31-44-1.jpg" alt="sapo">
+                    <h2>Sapos</h2>
+                    <p>Os sapos são usados como inspiração na modelagem digital por suas formas diferentes, pele
+                        texturizada
+                        e movimentos marcantes. Essas características ajudam artistas a criar personagens únicos em
+                        filmes,
+                        jogos e animações.Muitos dasvezes ele saiem para pegar os sapos manualmente.</p>
+                </div>
+
+
+            </div>
+        </center>
+        <!-- Curiosidades -->
+
+        <hr class="featurette-divider">
+
+        <div id="viz" class="row featurette">
+            <div id="sobre" class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">O que é o <span class="text-body-secondary"> VizLab</span>
+                </h2>
+                <p class="lead"> O VizLab, da Unisinos em São Leopoldo, é um laboratório voltado à pesquisa em
+                    geoinformática, visualização 3D e tecnologias imersivas, com foco na área geológica e energética.
+                    Desenvolve projetos como o Atlas Geológico Digital Interativo e ferramentas como o MOSIS V2, que
+                    auxiliam na visualização e interpretação de dados geológicos em ambientes virtuais. Atua em parceria
+                    com
+                    outras universidades e busca aplicar tecnologia de ponta para apoiar estudos e decisões na área de
+                    geociências.
+                </p>
+            </div>
+
+            <hr class="featurette-divider">
+
+
+            <div id="Criadores" class="container marketing text-center">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="https://i.postimg.cc/sxG4KWvR/foto-amanda.jpg"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Imagem 1">
+                        <h2 class="fw-normal">Amanda</h2>
+                        <p>Teste do app, auxílio e correção de erros</p>
+                        <p><a target="_blank" class="btn btn-secondary" href="https://github.com/rothmail">
+                                rothmail»</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="https://i.postimg.cc/5NNxHmYG/foto-dani.jpg" class="bd-placeholder-img rounded-circle"
+                            width="140" height="140" alt="Imagem 2">
+                        <h2 class="fw-normal">Danielle</h2>
+                        <p>Pesquisa, Criação e Desenvolvimento das telas.</p>
+                        <p><a target="_blank" class="btn btn-secondary" href="https://github.com/DanizitaDs">DanizitaDs
+                                »</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="https://i.postimg.cc/CKjyrZnk/foto-luiza.jpg"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Imagem 3">
+                        <h2 class="fw-normal">Luiza</h2>
+                        <p>Pesquisa, informações e paletas</p>
+                        <p><a target="_blank" class="btn btn-secondary" href="https://github.com/luizatauchert">tauchert
+                                »</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="https://i.postimg.cc/vZ4bhHvt/foto-paulo.jpg"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Imagem 4">
+                        <h2 class="fw-normal">Paulo</h2>
+                        <p>Curiosidades</p>
+                        <p><a target="_blank" class="btn btn-secondary" href="https://github.com/paulo12317">paulo12317
+                                »</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="https://i.postimg.cc/CxnpDrFv/foto-jeff.jpg" class="bd-placeholder-img rounded-circle"
+                            width="140" height="140" alt="Imagem 5">
+                        <h2 class="fw-normal">Jeferson</h2>
+                        <p>Curiosidades</p>
+                        <p><a target="_blank" class="btn btn-secondary" href="https://github.com/smokejj"> smokejj»</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="https://i.postimg.cc/QM6zypxB/foto-isa.jpg" class="bd-placeholder-img rounded-circle"
+                            width="140" height="140" alt="Imagem 6">
+                        <h2 class="fw-normal">Isabela</h2>
+                        <p>Carrossel de imagens</p>
+                        <p><a target="_blank" class="btn btn-secondary"
+                                href="https://github.com/Mueller07">Mueller07»</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="https://i.postimg.cc/4dS1zP45/foto-erica.jpg"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Imagem 7">
+                        <h2 class="fw-normal">Erica</h2>
+                        <p>Informações dos componentes do grupo e paletas</p>
+                        <p><a target="_blank" class="btn btn-secondary"
+                                href="https://github.com/EricaMkleinkauf">MKleinkauf
+                                »</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="b-example-divider"></div>
+
+            <div class="container">
+                <footer class="py-3 my-4">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 ">Software XP</a></li>
+                    </ul>
+                    <p class="text-center">&copy; Abril 2025 </p>
+                </footer>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

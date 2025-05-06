@@ -1,0 +1,9 @@
+.container{
+    display: inline-grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.container div{
+    border: solid 3px black;
+}

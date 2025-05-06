@@ -1,0 +1,79 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://img.freepik.com/free-photo/blackboard-inscribed-with-scientific-formulas-calculations_1150-19413.jpg?t=st=1745068981~exp=1745072581~hmac=48b76081b6c955ce5d95c1187e0beb8b6e7fed58d43040d756db5e7bedbd8c50&w=1380');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputText {
+    width: 80%;
+    height: 70px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    padding: 10px;
+    border: 2px solid #c6c6c6;
+    border-radius: 10px;
+    background-color: #e9e9e9;
+    transition: background-color 0.1s ease;
+}
+
+#inputText:hover {
+    background-color: #d2d2d2;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 9px;
+}
+
+.button {
+    font-size: 25px;
+    background-color: #e1e1e1;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    transition: background-color 0.1s ease;
+}
+
+.button:hover {
+    background-color: #cbcbcb;
+}
+
+#delete {
+    background-color: #e40000;
+    transition: background-color 0.1s ease;
+}
+
+#delete:hover {
+    background-color: #960000;
+}
+
+#equal-button {
+    background-color: #3aae00;
+    transition: background-color 0.1s ease;
+    width: 210px;
+}
+
+#equal-button:hover {
+    background-color: #205f00;
+}
+
+#clear {
+    background-color: #0000e2;
+    transition: background-color 0.1s ease;
+}
+
+#clear:hover {
+    background-color: #00008a;
+}

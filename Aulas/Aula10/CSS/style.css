@@ -1,0 +1,78 @@
+li:first-child {
+    color: red;
+}
+
+li:nth-child(2) {
+    color: blue;
+}
+
+a:hover {
+    color: rgb(194, 97, 32);
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+
+a:active {
+    color: black;
+}
+
+p::first-letter {
+    color: blue;
+    font-size: 200%;
+}
+
+p:first line {
+    font-style: italic;
+}
+
+a::before {
+    content: "<";
+}
+
+a::after {
+    content: ">";
+}
+
+p {
+    text-shadow: 100px 4px 2px;
+}
+
+/****************/
+
+html,
+body,
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+div {
+    width: 20%;
+    height: 30%;
+    background-color: black;
+
+}
+
+#itemA {
+    border-radius: 15px;
+}
+
+#itemB {
+    border-radius: 5px 20px;
+}
+
+#itemC {
+    border-radius: 5px 20px 50px;
+}
+
+#itemD {
+    border-radius: 5px 20px 50px 100px;
+}

@@ -1,0 +1,42 @@
+
+@media screen and (max-width: 480px) {
+    #curi {
+        width: 90%;
+        height: 440px;
+        margin-top: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .pj {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5px;
+        border: 2px solid #521770;
+        margin-right: 5px;
+        border-radius: 8px;
+        margin-bottom: 100px;
+        margin-left: 25px;
+    }
+    
+    .pj:hover{
+        transition: 1s;
+        box-shadow: 0 4px 10px purple;
+        transform: scale(1.05);
+    }
+    
+    .pj img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+    
+    .pj h2{
+        color: #521770;
+    }
+}

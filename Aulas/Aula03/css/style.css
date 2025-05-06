@@ -1,0 +1,28 @@
+h1 {
+    font-family: serif;
+    font-style: italic;
+    font-size: 45px;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-style: bold;
+    font-size: 5px;
+}
+
+h3 {
+    font-family: monospace;
+    font-style: oblique;
+    font-size: 100px;
+}
+
+h4 {
+    font-family: cursive;
+    font-style: normal;
+    font-size: 24px;
+}
+
+h5 {
+    font-family: fantasy;
+    font-size: 50px;
+}

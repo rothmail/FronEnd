@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax</title>
+    <link rel="stylesheet" href="./css/example.css" />
+</head>
+
+<body>
+    <div class="horizon scroll">
+        <img src="./images/horizon.png" alt="" />
+    </div>
+    <div class="middle scroll">
+        <img src="./images/middle.png" alt="" />
+    </div>
+    <div class="front scroll">
+        <img src="./images/front.png" alt="" />
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.jInvertScroll.js"></script>
+    <script src="./js/jquery.jInvertScroll.min.js"></script>
+    <script type="text/javascript">
+        (function ($) {
+            var elem = $.jInvertScroll(['.scroll'],
+                {
+                    height: 6000,
+                    onScroll: function (percent) {
+                        console.log(percent);
+                    }
+                });
+
+            $(window).resize(function () {
+                if ($(window).width() <= 768) {
+                    elem.destroy();
+                }
+                else {
+                    elem.reinitialize();
+                }
+            });
+        }(jQuery));
+    </script>
+</body>
+
+</html>
