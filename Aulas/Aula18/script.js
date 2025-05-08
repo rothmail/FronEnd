@@ -14,7 +14,7 @@ let habilidade = document.querySelector("#habilidade");
 let peso = document.querySelector("#peso");
 let altura = document.querySelector("#altura");
 
-let numero = 0;
+let numero = 1;
 // atribuição termina aqui
 
 // "puxar" API
@@ -29,7 +29,7 @@ const fetchP = async (pokemon) => {
 // mostrar atributos do pokemon com base na API
 const showPokemon = async (pokemon) => {
   const dataPokemon = await fetchP(pokemon); // "data" busca a informação na API
-  image.src = dataPokemon.sprites.front_default;
+  image.src = dataPokemon.sprites.other.showdown.front_default;
 
   nome.innerHTML = dataPokemon.name; // "innerHTML" faz com que mude o atributo com base na API
   id.innerHTML = dataPokemon.id;
@@ -45,30 +45,31 @@ const showPokemon = async (pokemon) => {
   audio.play();
 };
 
-// ação no input
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  showPokemon(input.value.toLowerCase());
-});
-
-showPokemon(numero); // chamar a função
-
 // atribuição dos botões "voltar" e "próximo"
 let next = document.querySelector("#btn-next");
 let back = document.querySelector("#btn-back");
 
 // condições para funcionalidade correto dos botões
-next.addEventListener("click", (event) => {
-  if (numero < 1025) {
-    numero += 1;
-  }
-  showPokemon(numero);
-});
+form.addEventListener("submit", (event) =>{
+  event.preventDefault();
+  showPokemon(input.value.toLowerCase());
+  numeroPokedex = input.value
+})
 
 // condições para funcionalidade correto dos botões
-back.addEventListener("click", (event) => {
-  if (numero > 1) {
-    numero -= 1;
+back.addEventListener("click", (event) =>{
+  if(numeroPokedex > 1){
+      numeroPokedex--
   }
-  showPokemon(numero);
-});
+  showPokemon(numeroPokedex);
+})
+
+// condições para funcionalidade correto dos botões
+next.addEventListener("click", (event) =>{
+  if(numeroPokedex < 1000){
+      numeroPokedex++
+  }
+  showPokemon(numeroPokedex);
+})
+
+// pegar o valor do input e somar ++1, se estiver vazio, então atribuir valor 1 à ele

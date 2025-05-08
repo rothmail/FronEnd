@@ -1,79 +1,89 @@
-body,
-html {
-    width: 100%;
-    height: 100%;
+/*fonte a ser usada*/
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('./img/Pokemon Solid.ttf') format('truetype');
+}
+
+/*para todos elementos*/
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pokemon Solid', sans-serif;
 }
 
+/*body*/
 body {
-    color: white;
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/027/127/571/small_2x/pokemon-logo-pokemon-icon-transparent-free-png.png");
-    background-repeat: no-repeat;
+    background-image: url('./img/pokemonwallpaper.jpeg');
     background-size: cover;
-}
-
-/*
-1225px, 578px*/
-
-main {
-    width: 100%;
-    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-#container {
-    width: 60%;
-    height: 90%;
+/*elementos dentro da pokedex*/
+#img-pokedex {
     position: relative;
-}
-
-figure img {
-    width: 300px;
-    height: 500px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #image {
     position: absolute;
-    bottom: 40%;
-    left: 10%;
+    top: 15%;
+    left: 45%;
+    width: 5%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #image-pokemon {
-    width: 150%;
-    height: 150%;
+    width: 100%;
 }
 
 #form {
-    position: absolute;
-    bottom: 39%;
-    left: 13%;
+    width: auto;
+    text-align: center;
+}
+
+#input {
+    width: 45%;
+    text-align: center;
 }
 
 #nome-pokemon {
-    position: absolute;
-    bottom: 31%;
-    left: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
 }
 
-#info {
-    position: absolute;
-    bottom: 26%;
-    left: 20%;
+#info, #info2 {
+    color: #decdcd;
+    font-family: cursive;
 }
 
-#info2 {
-    position: absolute;
-    bottom: 15%;
-    left: 20%;
-}
-
+/*botões*/
 #botoes {
-    position: absolute;
-    bottom: 8%;
-    left: 20%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
-/*
-1em refere-se è medida de um elemento que segue o tamanho de seu elemento pai, ou seja, se o elemento possui o tamanho de 16px, então 1em será igual à 16px
-*/
+#btn-next, #btn-back {
+    padding: 10px 20px;
+    background-color: #444;
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: clamp(12px, 4vw, 1rem);
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
