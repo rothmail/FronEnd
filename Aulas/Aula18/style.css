@@ -12,6 +12,9 @@ body {
     background-size: cover;
 }
 
+/*
+1225px, 578px*/
+
 main {
     width: 100%;
     height: 100%;
@@ -70,3 +73,7 @@ figure img {
     bottom: 8%;
     left: 20%;
 }
+
+/*
+1em refere-se è medida de um elemento que segue o tamanho de seu elemento pai, ou seja, se o elemento possui o tamanho de 16px, então 1em será igual à 16px
+*/
