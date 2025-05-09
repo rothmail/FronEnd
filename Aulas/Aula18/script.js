@@ -33,19 +33,21 @@ const showPokemon = async (pokemon) => {
   const dataPokemon = await fetchP(pokemon); // "data" busca a informação na API
   image.src = dataPokemon.sprites.other.showdown.front_default;
 
-  nome.innerHTML = dataPokemon.name; // "innerHTML" faz com que mude o atributo com base na API
-  id.innerHTML = dataPokemon.id;
+  nome.innerHTML = `Nome: ${dataPokemon.name};` // "innerHTML" faz com que mude o atributo com base na API
+  id.innerHTML = `ID: ${dataPokemon.id}`;
 
-  tipo1.innerHTML = dataPokemon.types[0].type.name;
-  if (dataPokemon.types[1] != undefined) {tipo2.innerHTML = dataPokemon.types[1].type.name;} else {tipo2.innerHTML = "";}
+  tipo1.innerHTML = `Tipos: ${dataPokemon.types[0].type.name}          `;
+  if (dataPokemon.types[1] != undefined) {tipo2.innerHTML = `${dataPokemon.types[1].type.name}`;} else {tipo2.innerHTML = "";}
 
-  habilidade.innerHTML = dataPokemon.abilities[0].ability.name;
-  peso.innerHTML = (dataPokemon.weight / 10).toFixed(1) + "kg"; // "peso" e "altura" devem ser convertidos de libras para kg
-  altura.innerHTML = (dataPokemon.height / 10).toFixed(1) + "m";
+  habilidade.innerHTML = `Habilidade: ${dataPokemon.abilities[0].ability.name}`;
+  peso.innerHTML = `Peso: ${(dataPokemon.weight / 10).toFixed(1) + "kg"}`; // "peso" e "altura" devem ser convertidos de libras para kg
+  altura.innerHTML = `Altura: ${(dataPokemon.height / 10).toFixed(1) + "m"}`;
 
   const audio = new Audio(dataPokemon.cries.latest);
   audio.play();
 };
+
+showPokemon(numero);
 
 // atribuição dos botões "voltar" e "próximo"
 let next = document.querySelector("#btn-next");
