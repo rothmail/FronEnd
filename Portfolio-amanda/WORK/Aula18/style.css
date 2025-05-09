@@ -1,0 +1,159 @@
+/*fonte a ser usada*/
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('./img/Pokemon Solid.ttf') format('truetype');
+}
+
+/*para todos elementos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 13px;
+}
+
+/*body*/
+body {
+    background-image: url('./img/pokemonwallpaper.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    left: 100%;
+}
+
+/*elementos dentro da pokedex*/
+#img-pokedex {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#image {
+    position: absolute;
+    top: 33%;
+    left: 45%;
+}
+
+#image-pokemon {
+    width: 100%;
+}
+
+.div {
+    position: absolute;
+    top: 60%;
+}
+
+/*parte chata porque tem que fazer a responsividade*/
+#form {
+    position: absolute;
+    left: 35%;
+    top: 53%;
+    width: 30%;
+}
+
+#input {
+    margin-top: 10px;
+    width: 45%;
+    top: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1180px) {
+    * {
+        font-size: 10px;
+    }
+
+    #dados {
+        margin-top: 5%;
+    }
+}
+
+#input:hover {
+    background-color: #c6c6c6;
+}
+
+#dados {
+    color: #fff;
+}
+
+/*
+#info, #info2 {
+    color: #fff;
+}
+
+#nome {
+    position: absolute;
+    left: 55%;
+    top: 60%;
+}
+
+#id {
+    position: absolute;
+    left: 45%;
+    top: 60%;
+}
+
+#tipo-01 {
+    position: absolute;
+    bottom: 20%;
+}
+
+#tipo-02 {
+    left: 55%;
+    top: 60%;
+}
+
+#habilidade {
+    left: 50%;
+    top: 100%;
+}
+
+#peso {
+    left: 50%;
+    top: 150%;
+}
+
+#altura {
+    left: 50%;
+    top: 200%;
+}
+
+/*botões*/
+#botoes {
+    display: flex;
+    justify-content: space-between;
+    left: 403;
+    top: 85%;
+}
+
+#btn-next,
+#btn-back {
+    padding: 5px;
+    padding-bottom: 30px;
+    padding-top: 0;
+    margin-top: 0;
+    background-color: #b6b6b6;
+    border: 2px solid #9a9a9a;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    height: 30px;
+}
+
+@media screen and (min-width: 445x) {
+    #img-pokedex {
+        width: 445px;
+    }
+}
