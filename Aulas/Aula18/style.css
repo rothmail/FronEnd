@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Pokemon Solid', sans-serif;
+    font-size: 13px;
 }
 
 /*body*/
@@ -25,65 +26,134 @@ body {
     align-items: center;
 }
 
+#container {
+    display: flex;
+    justify-content: center;
+    left: 100%;
+}
+
 /*elementos dentro da pokedex*/
 #img-pokedex {
     position: relative;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 
 #image {
     position: absolute;
-    top: 15%;
+    top: 33%;
     left: 45%;
-    width: 5%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #image-pokemon {
     width: 100%;
 }
 
+.div {
+    position: absolute;
+    top: 60%;
+}
+
+/*parte chata porque tem que fazer a responsividade*/
 #form {
-    width: auto;
-    text-align: center;
+    position: absolute;
+    left: 35%;
+    top: 53%;
+    width: 30%;
 }
 
 #input {
+    margin-top: 10px;
     width: 45%;
+    top: 50%;
     text-align: center;
 }
 
-#nome-pokemon {
-    display: flex;
-    justify-content: space-evenly;
+@media screen and (max-width: 1180px) {
+    * {
+        font-size: 10px;
+    }
+
+    #dados {
+        margin-top: 5%;
+    }
+}
+
+#input:hover {
+    background-color: #c6c6c6;
+}
+
+#dados {
     color: #fff;
 }
 
+/*
 #info, #info2 {
-    color: #decdcd;
-    font-family: cursive;
+    color: #fff;
+}
+
+#nome {
+    position: absolute;
+    left: 55%;
+    top: 60%;
+}
+
+#id {
+    position: absolute;
+    left: 45%;
+    top: 60%;
+}
+
+#tipo-01 {
+    position: absolute;
+    bottom: 20%;
+}
+
+#tipo-02 {
+    left: 55%;
+    top: 60%;
+}
+
+#habilidade {
+    left: 50%;
+    top: 100%;
+}
+
+#peso {
+    left: 50%;
+    top: 150%;
+}
+
+#altura {
+    left: 50%;
+    top: 200%;
 }
 
 /*botões*/
 #botoes {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: space-between;
+    left: 403;
+    top: 85%;
 }
 
-#btn-next, #btn-back {
-    padding: 10px 20px;
-    background-color: #444;
-    border: 2px solid #000;
+#btn-next,
+#btn-back {
+    padding: 5px;
+    padding-bottom: 30px;
+    padding-top: 0;
+    margin-top: 0;
+    background-color: #b6b6b6;
+    border: 2px solid #9a9a9a;
     border-radius: 5px;
-    color: white;
-    font-weight: 600;
-    font-size: clamp(12px, 4vw, 1rem);
-    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+    color: #000;
     cursor: pointer;
-    transition: 0.2s ease;
+    height: 30px;
+}
+
+@media screen and (min-width: 445x) {
+    #img-pokedex {
+        width: 445px;
+    }
 }
