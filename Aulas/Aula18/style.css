@@ -86,6 +86,9 @@ body {
 
 #dados {
     color: #fff;
+    position: absolute;
+    left: 51%;
+    font-size: 5px;
 }
 
 /*

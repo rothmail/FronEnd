@@ -14,6 +14,8 @@ let habilidade = document.querySelector("#habilidade");
 let peso = document.querySelector("#peso");
 let altura = document.querySelector("#altura");
 
+const som = document.querySelector("#som");
+
 let numero = 1;
 // atribuição termina aqui
 
@@ -72,4 +74,7 @@ next.addEventListener("click", (event) =>{
   showPokemon(numeroPokedex);
 })
 
-// pegar o valor do input e somar ++1, se estiver vazio, então atribuir valor 1 à ele
+document.addEventListener('click', () => {
+  som.muted = false;
+  som.play();
+});
