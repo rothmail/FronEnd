@@ -85,10 +85,16 @@ body {
 }
 
 #dados {
+    font-size: 1%;
     color: #fff;
     position: absolute;
-    left: 51%;
-    font-size: 5px;
+    left: 47%;
+    bottom: 36%;
+    height: 5%;
+}
+
+#id {
+    margin-right: 10px;
 }
 
 /*
