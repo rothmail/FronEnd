@@ -16,7 +16,7 @@ let altura = document.querySelector("#altura");
 
 const som = document.querySelector("#som");
 
-let numero = 1;
+let numeroPokedex = 1;
 // atribuição termina aqui
 
 // "puxar" API
@@ -47,7 +47,7 @@ const showPokemon = async (pokemon) => {
   audio.play();
 };
 
-showPokemon(numero);
+showPokemon(numeroPokedex);
 
 // atribuição dos botões "voltar" e "próximo"
 let next = document.querySelector("#btn-next");
