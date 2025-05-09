@@ -1,0 +1,44 @@
+{
+    "Pessoas": [
+        {
+            "nome": "Amanda",
+            "idade": 16,
+            "local": {
+                "país": "Brasil",
+                "estado": "Rio Grande do Sul",
+                "cidade": "São Leopoldo",
+                "bairro": "Centro"
+            }
+        },
+        {
+            "nome": "Danielle",
+            "idade": 17,
+            "local": {
+                "país": "Brasil",
+                "estado": "Rio Grande do Sul",
+                "cidade": "Sapucaia do Sul",
+                "bairro": "Jardim América"
+            }
+        },
+        {
+            "nome": "Paulo",
+            "idade": 16,
+            "local": {
+                "país": "Brasil",
+                "estado": "Rio Grande do Sul",
+                "cidade": "São Leopoldo",
+                "bairro": "Santos Dummund"
+            }
+        },
+        {
+            "nome": "Jeferson",
+            "idade": 16,
+            "local": {
+                "país": "Brasil",
+                "estado": "Rio Grande do Sul",
+                "cidade": "São Leopoldo",
+                "bairro": "Campina"
+            }
+        }
+    ]
+}

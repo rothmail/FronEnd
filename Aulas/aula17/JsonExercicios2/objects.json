@@ -1,0 +1,35 @@
+{
+    "Pessoas": [
+        {
+            "nome": "amanda",
+            "idade": 16,
+            "cpf": 100000001,
+            "telefone": 999999999
+        },
+        {
+            "nome": "jeferson",
+            "idade": 92,
+            "cpf": 100000002,
+            "telefone": 999999998
+        },
+        {
+            "nome": "paulo",
+            "idade": 15,
+            "cpf": 100000003,
+            "telefone": 999999997
+        },
+        {
+            "nome": "ana",
+            "idade": 16,
+            "cpf": 100000004,
+            "telefone": 999999996
+        },
+        {
+            "nome": "eduarda",
+            "idade": 18,
+            "cpf": 100000005,
+            "telefone": 999999995
+        }
+        
+    ]
+}

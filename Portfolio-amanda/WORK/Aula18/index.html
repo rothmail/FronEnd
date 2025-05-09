@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id="container">
+            <figure id="fig-pokemon"> <!--imagem da pokedex-->
+                <img id="img-pokedex" src="./img/pokedexImg.png" alt="pokedex">
+            </figure>
+
+            <figure id="image"> <!--imagem do pokemon-->
+                <img id="image-pokemon" src="" alt="imagem do pokemon">
+            </figure>
+
+            <form action="" id="form"> <!--input para o ID-->
+                <input id="input" type="text">
+            </form>
+
+            <!--aqui começam as informações sobre o pokemon-->
+            <div class="div" id="dados"> <!--nome e id-->
+                <span id="id">ID</span>
+                <span id="nome">Nome</span><br>
+
+                <span id="tipo-01">Tipo 1</span>
+                <span id="tipo-02">Tipo 2</span>
+
+                <div id="habilidade">habilidade</div>
+                <div id="peso">peso</div>
+                <div id="altura">altura</div>
+            </div>
+
+            <div class="div" id="botoes"> <!--botões-->
+                <button id="btn-back">Voltar</button>
+                <button id="btn-next">Próximo</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+    <audio src="./img/Pokémon Theme Song.mp3" autoplay></audio>
+</body>
+
+</html>
